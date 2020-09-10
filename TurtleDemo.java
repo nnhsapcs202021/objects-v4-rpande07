@@ -48,5 +48,42 @@ public class TurtleDemo
          */
         
         crush.forward(25); //the crush object will move forward by 25 pixels
+        
+        // this is a single-line comment (like # python)
+        
+        /*
+         * Identifiers are any combonation of:
+         * letters
+         * digits (but not as first character)
+         * underscores (_)
+         * dollar signs ($)
+         * 
+         * These are the varioud identifiers;
+         */
+        
+        int y, x2, x_y, x$;
+        
+        // This is not a valid identifier:
+        // int 2y;
+        
+        /*
+         * Identifiers are case sensitive (case matters).
+         * 
+         * These are different:
+         */
+        Turtle squirt, SQUIRT, sQUirT;
+        
+        /*
+         * By convention, constant values are all uppercase. Use an underscore between words.
+         */
+        
+        int SPEED_OF_LIGHT = 300000000; // meters/second
+        
+        /* 
+         * By convention, most identifiers start with a lowercase letter.
+         * Subsequent words start with an uppercase letter (CamelCase)
+         */
+        World pacificOcean;
+        
     }
 }
