@@ -12,7 +12,6 @@
  */
 
 
-
 import java.awt.Color;
 
 public class TurtleDemo
@@ -35,7 +34,7 @@ public class TurtleDemo
         crush.penDown();
         crush.forward(50);
         crush.forward(100);
-        
+
         /* 
          * A method contains statements.
          * 
@@ -46,11 +45,11 @@ public class TurtleDemo
          * When invoking a method, arguments are passed in parentheses (e.g. 50)
          * 
          */
-        
+
         crush.forward(25); //the crush object will move forward by 25 pixels
-        
+
         // this is a single-line comment (like # python)
-        
+
         /*
          * Identifiers are any combonation of:
          * letters
@@ -60,30 +59,98 @@ public class TurtleDemo
          * 
          * These are the varioud identifiers;
          */
-        
+
         int y, x2, x_y, x$;
-        
+
         // This is not a valid identifier:
         // int 2y;
-        
+
         /*
          * Identifiers are case sensitive (case matters).
          * 
          * These are different:
          */
         Turtle squirt, SQUIRT, sQUirT;
-        
+
         /*
          * By convention, constant values are all uppercase. Use an underscore between words.
          */
-        
+
         int SPEED_OF_LIGHT = 300000000; // meters/second
-        
+
         /* 
          * By convention, most identifiers start with a lowercase letter.
          * Subsequent words start with an uppercase letter (CamelCase)
          */
         World pacificOcean;
+
+    }
+
+    public static void drawLine()
+    {
+        /*
+         * Objects are entities in a program.
+         * Objects have attributes.
+         * Objects are manipulated by invoking methods.
+         * 
+         * ocean and crush are variables that reference objects
+         * 
+         * classes describe a collection of objects.
+         *  All objects of a class have the same behavior (method),
+         *  and they have the same type of attributes (but they may have different values).
+         * 
+         * 
+         */
+        World ocean = new World();
+        
+        /*
+         * We use the new operator to construct (creat, instantiate) an objects.
+         * 
+         * The class of the object is specified immediately after the new operator (e.g. Turtle)
+         * 
+         * If we need to pass additional information to construct the object, arguments are
+         * specified in parentheses after the class (e.g. ocean).
+         */
+        
+        Turtle crush = new Turtle(ocean);
+        
+        /*
+         * Variables store values to be used later.
+         * Variables have a type (e.g. int), a name (e.g. width), and a value (e.g. 20)
+         */
+        int width = 20; // declaring a variable
+        width = 20; //assigning a value to a variable
+        
+        /*
+         * Java has several primative data types:
+         *  boolean holds a value of true or false
+         *  int holds an integer number
+         *  double holds a real number (floating point)
+         *  char holds a single character
+         */
+        
+        
+        // here is a boolean
+        boolean isSummer= true;
+        
+        // here is a double
+        double salesTaxRate = 0.075;
+        
+        // here is a char
+        char letter = 'c';
+        
+        /* 
+         * When involing method, we use the dot operator (i.e., '.') to invoke a method on an object.
+         * 
+         * Some methods take no arguments, bu we still have parentheses (e.g., penDown).
+         * 
+         * Some methods take one or more arguments (e.g., forward).
+         * 
+         * Mutator methods modify the state (i.e., values of attributes) of the object
+         */
+        
+
         
     }
+
 }
